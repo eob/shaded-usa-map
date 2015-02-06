@@ -66,14 +66,15 @@ CTS.status.libraryLoaded.then(function() {
     var doit = function() {
       var widgetContainer = evt.target.value;
       shadedUsaMapWidget_Init(widgetContainer);
-    }
-    var tryIt = funtion() {
+    };
+    var tryIt = function() {
       if (d3) {
         doit();
       } else {
         setTimeout(tryIt, 100);
       }
     }
+    tryIt();
   })
 });
 
