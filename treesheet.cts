@@ -10,11 +10,11 @@
  * 
  * And then invoke the widget like this:
  *
- *   <div widget="visualizations/truck-test"></div>
+ *   <div widget="visualizations/shaded-usa-map"></div>
  *
  */
 
-@html shaded-usa-map //apps.cloudstitch.io/visualizations/truck-test/index.html;
+@html shaded-usa-map //apps.cloudstitch.io/visualizations/shaded-usa-map/index.html;
 @css relative(map.css);
 @js relative(geometry.js);
 @js relative(d3.min.js);
