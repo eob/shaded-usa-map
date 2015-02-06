@@ -1,7 +1,7 @@
 function shadedUsaMapWidget_Init(elem, treeName) {
   // Load data
   if (typeof tree == 'undefined') {
-    treeName = 'shadedUsaMapWidget';
+    treeName = 'shaded-usa-map';
   }
   if (CTS && CTS.engine && CTS.engine.forrest) {
     try {
