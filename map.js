@@ -68,7 +68,7 @@ CTS.status.libraryLoaded.then(function() {
       shadedUsaMapWidget_Init(widgetContainer);
     };
     var tryIt = function() {
-      if (typeof d3 != 'undefined') {
+      if ((typeof d3 != 'undefined') && (typeof window.shadedUsaMapWidget_Data != 'undefined')) {
         doit();
       } else {
         setTimeout(tryIt, 100);
