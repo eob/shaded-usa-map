@@ -60,10 +60,20 @@ function shadedUsaMapWidget_Draw(elem, data, settings) {
       .attr("class", quantize);
 }
 
+
 CTS.status.libraryLoaded.then(function() {
   CTS.on('cts-received-graft', function(evt) {
-    var widgetContainer = evt.target.value;
-    shadedUsaMapWidget_Init(widgetContainer);
+    var doit = function() {
+      var widgetContainer = evt.target.value;
+      shadedUsaMapWidget_Init(widgetContainer);
+    }
+    var tryIt = funtion() {
+      if (d3) {
+        doit();
+      } else {
+        setTimeout(tryIt, 100);
+      }
+    }
   })
 });
 
