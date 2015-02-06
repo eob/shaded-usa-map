@@ -19,7 +19,6 @@
 @js relative(geometry.js);
 @js relative(d3.min.js);
 @js relative(map.js);
-@gsheet shaded-usa-map-datasource //cloudstitch.io/visualizations/shaded-usa-map/datasource/shaded-usa-map;
-
+@gsheet shadedUsaMapDatasource http://cloudstitch.io/visualizations/shaded-usa-map/datasource/shadedUsaMapDatasource;
 
 body|*[widget="visualizations/shaded-usa-map"] :graft shaded-usa-map|#shaded-usa-map;
